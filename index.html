@@ -1,17 +1,611 @@
-<!DOCTYPE html> 
-<html> 
-	<head> 
-		<title>DevCon 5 Mobile App</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1"> 
-		<link rel="stylesheet" href="../css/main.css" />
-		<script src="../js/main.js"></script>
-	</head> 
-	<body id="schedule"> 
-		<header>
-			<h1 id="logo"><a href="/">DevCon 5</a></h1>
-		</header>
-		<div id ="content">
-		</div>
-	</body>	
-</html>		
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DevCon 5 Mobile App</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/main.css" />
+	<!--<script src="js/main.js"></script>-->
+</head>
+<body id="schedule">
+	<header>
+		<h1 id="logo">
+			<a href="/">DevCon 5</a>
+		</h1>
+	</header>
+	<div id ="content">
+		<h2>Schedule</h2>
+		<h3>Monday, July 23, 2012</h3>
+		<section class='slot'>
+			<header class='slottime'>
+				<div class='time'>9:00-10:00am</div>
+			</header>
+
+			<article id="GEN-01" class='session'>
+				<h1>COMMUNITY SESSION - The HTML5 Connectivity Revolution</h1>
+				<div class="speaker">
+					<div class='name'>Peter Lubbers</div>
+					<div class='title'>Senior Director, Technical Communications</div>
+					<div class='company'>Kaazing Corporation</div>
+				</div>
+				<div class='detail'>
+					<p>
+						While HTML5 is mostly about evolution, some of the features in the Connectivity and RealTime area are, in fact, pretty revolutionary. Combining the power of socket connections for protocol communication, rich graphics, and offline capabilities makes it possible for web apps to be on par, or even better than, desktop applications.
+					</p>
+					<p>
+						This is precisely what makes HTML5 so compelling. HTML5 is making the web more interactive and in the quicker. It also reduces the need for middleware with HTML5. Peter will explore what some of the major new feature areas are when it comes to HTML5 connectivity and real time and how those are changing how you will build modern web apps.
+					</p>
+				</div>
+			</article>
+
+		</section>
+		<section class='slot'>
+			<header class='slottime'>
+				<div class='time'>10:00-10:10am</div>
+			</header>
+
+			<article id="" class='session'>
+				<h1>DEMO</h1>
+				<div class='detail'></div>
+			</article>
+
+		</section>
+		<section class='slot'>
+			<header class='slottime'>
+				<div class='time'>10:30-11:20am</div>
+			</header>
+
+			<article id="A-01" class='session'>
+				<h1>WebWorks Maximizing HTML5</h1>
+				<div class="speaker">
+					<div class='name'>Laurent Hasson</div>
+					<div class='title'>Technical Director</div>
+					<div class='company'>RIM</div>
+				</div>
+				<div class='detail'>
+					<p>
+						Most mobile Web developers come from a traditional desktop development background. As such, many are not aware of key differences between desktop browsers and mobile browsers once they are trying to build an app vs a traditional web site, even if adapted for mobile. In this introductory session aimed at desktop developers interested in making the jump to mobile, we will present the technical tricks that are needed to circumvent a mobile browsers own interface touch and gesture management, viewport and other aspects to deliver a web app that looks and feels like a native app. We will discuss among other things how to virtualize the browsers own event loop, block swipe and pinch/zoom gestures, pin down the viewport, and a simple trick to build a mobile touchbased app that also works on a desktop browser with mouse events.
+					</p>
+				</div>
+			</article>
+
+			<article id="G-01" class='session'>
+				<h1>WebSocket 101</h1>
+				<div class="speaker">
+					<div class='name'>Peter Lubbers</div>
+					<div class='title'>Senior Director, Technical Communications</div>
+					<div class='company'>Kaazing Corporation</div>
+				</div>
+				<div class='detail'>
+					<p>
+						HTML5 WebSocket is a new standardized API and protocol for continuous, bidirectional, lowoverhead communications between browsers and remote hosts. It enables the development of a new generation of dynamic, browserbased web applications.
+					</p>
+					<p>
+						Although the basic concept of a WebSocketenabled application is relatively simple, the actual implementation of this technology involves a number of steps which require careful attention to detail. In this session you will come up to speed quickly on the basics of WebSocket and you will learn what is involved in building realtime WebSocketbased applications.
+					</p>
+				</div>
+			</article>
+
+			<article id="U-01" class='session'>
+				<h1>Designing Cross-Platform Mobile Web Apps</h1>
+				<div class="speaker">
+					<div class='name'>David Kaneda</div>
+					<div class='title'>Creative Web Technologist</div>
+					<div class='company'>Sencha</div>
+				</div>
+				<div class='detail'>
+					<p>
+						With the increasing number of mobile platforms, resolutions, and pixel densities, it is becoming harder and harder to deliver a rich, nativefeeling experience to all of your users. David Kaneda will discuss crossplatform UI paradigms, code forking, and brand integration in this session as a way to outline a better design process for mobile web apps.
+					</p>
+				</div>
+			</article>
+
+		</section>
+		<section class='slot'>
+			<header class='slottime'>
+				<div class='time'>11:30-12:20pm</div>
+			</header>
+
+			<article id="A-02" class='session'>
+				<h1>Alice.js Animating HTML5 User Experiences</h1>
+				<div class="speaker">
+					<div class='name'>Laurent Hasson</div>
+					<div class='title'>Technical Director</div>
+					<div class='company'>RIM</div>
+				</div>
+				<div class='detail'>
+					<p>
+						AliceJS is an open source micro javascript library http://blackberry.github.com/Alice that simplifies doing advanced animations with CSS. It’s self contained and works directly against the DOM to support a variety of use cases for web applications. With one line of JavaScript code, you can make almost any DOM elements swerve around the page while retaining a great amount of control with respect to animation parameters. Additionally, the framework introduced the concept of Organics, adding randomization characteristics to create visual effects that are subtly different each time they play out. Used for games as well as regular business apps, AliceJS can help bring freshness and polish to your work in a very simple and straightforward manner.
+					</p>
+				</div>
+			</article>
+
+			<article id="G-02" class='session'>
+				<h1>
+					Creating Massively Cross-Platform Games with One HTML5 Code Base
+				</h1>
+				<div class="speaker">
+					<div class='name'>Tyler Smith</div>
+					<div class='title'>HTML5 Game Developer/Evangelist</div>
+					<div class='company'>appMobi</div>
+				</div>
+				<div class='detail'>
+					<p>
+						This session will address the issues that game developers face when creating or porting games to HTML5, for both desktop and mobile delivery. The talk will cover typical performance problems and will show coding methods to minimize or avoid them. Since HTML5 games can be delivered to both desktop and mobile devices, the presenter will cover tools and methods for creating the best user experience across mobile platforms.
+					</p>
+				</div>
+			</article>
+
+			<article id="U-02" class='session'>
+				<h1>Abstracting CSS for Complex Theming Systems</h1>
+				<div class="speaker">
+					<div class='name'>David Kaneda</div>
+					<div class='title'>Creative Web Technologist</div>
+					<div class='company'>Sencha</div>
+				</div>
+				<div class='detail'>
+					<p>
+						David Kaneda will cover the benefits of abstracting CSS by taking a deep look at Sass and Compass. The presentation will include general benefits of abstracted CSS as well as a livecoding demo to show, firsthand, how to get started.
+					</p>
+				</div>
+			</article>
+
+		</section>
+		<section class='slot'>
+			<header class='slottime'>
+				<div class='time'>12:30-2:00pm</div>
+			</header>
+
+			<article id="" class='session'>
+				<h1>KEYNOTE LUNCHEON</h1>
+				<div class='detail'></div>
+			</article>
+
+		</section>
+		<section class='slot'>
+			<header class='slottime'>
+				<div class='time'>2:00-2:50pm</div>
+			</header>
+
+			<article id="A-03" class='session'>
+				<h1>The Power of Canvas part 1</h1>
+				<div class="speaker">
+					<div class='name'>Jeff Fulton</div>
+					<div class='title'>CTO</div>
+					<div class='company'>8bitrocket.com</div>
+				</div>
+				<div id=A-03>
+					<div class='name'>Steve Fulton</div>
+					<div class='title'>Game Development, Web Technology Consultant</div>
+					<div class='company'>8bitrocket.com</div>
+				</div>
+				<div class='detail'>
+					<p>
+						HTML5 Canvas paints the World Wide web with audio and video. Learn about interactive multimedia applications and how HTML5s Canvas impacts their development. This new element animates images and brings gamelike experiences to the web.
+					</p>
+				</div>
+			</article>
+
+			<article id="G-03" class='session'>
+				<h1>The Mozilla App Ecosystem</h1>
+				<div class="speaker">
+					<div class='name'>Bill Walker</div>
+					<div class='title'>Engineering Manager</div>
+					<div class='company'>Mozilla Labs</div>
+				</div>
+				<div class='detail'></div>
+			</article>
+
+			<article id="U-03" class='session'>
+				<h1>Innovation 3.0</h1>
+				<div class="speaker">
+					<div class='name'>Terry Ribb</div>
+					<div class='title'>CMO</div>
+					<div class='company'>Relevens</div>
+				</div>
+				<div class='detail'>
+					<p>
+						Today, many Brands are resizing 2.0 sites for mobile customers. A good transition step. But 3.0 innovators are rethinking how to become a truly Mobile Brand: One that serves its Raving Fans, over time and on demand. This has led to a new generation of Branded Apps that redefine how customers stream, search, shop, and sharewithin their mobile lives. This presentation reviews innovation leaps and insights into the top design patterns and practices for 3.0 apps.
+					</p>
+				</div>
+			</article>
+
+		</section>
+		<section class='slot'>
+			<header class='slottime'>
+				<div class='time'>3:00-3:50pm</div>
+			</header>
+
+			<article id="A-04" class='session'>
+				<h1>The Power of Canvas part 2</h1>
+				<div class="speaker">
+					<div class='name'>Jeff Fulton</div>
+					<div class='title'>CTO</div>
+					<div class='company'>8bitrocket.com</div>
+				</div>
+				<div class="speaker">
+					<div class='name'>Steve Fulton</div>
+					<div class='title'>Game Development, Web Technology Consultant</div>
+					<div class='company'>8bitrocket.com</div>
+				</div>
+				<div class='detail'>
+					<p>
+						HTML5 Canvas paints the World Wide web with audio and video. Learn about interactive multimedia applications and how HTML5s Canvas impacts their development. This new element animates images and brings gamelike experiences to the web.
+					</p>
+				</div>
+			</article>
+
+			<article id="G-04" class='session'>
+				<h1>GameJam WebGL  Part 1</h1>
+				<div class="speaker">
+					<div class='name'>Tony Parisi</div>
+					<div class='title'></div>
+					<div class='company'>entrepreneur and career CTO/architect</div>
+				</div>
+				<div class='detail'></div>
+			</article>
+
+			<article id="U-04" class='session'>
+				<h1>Prototyping Data-Driven Apps with PhoneGap</h1>
+				<div class="speaker">
+					<div class='name'>Andrew Lunny</div>
+					<div class='title'>Computer Scientist</div>
+					<div class='company'>Adobe</div>
+				</div>
+				<div class='detail'>
+					<p>
+						In this session, well use existing HTML5 JavaScript libraries and the Apache Cordova framework to build a PhoneGap app that communicates with a remote server. Youll see how to use your existing HTML5 skills to build a mobile app that can be deployed to iOS, Android, and multiple other platforms, and how to use the powerful PhoneGap APIs to extend your apps capabilities beyond what a browser can do.
+					</p>
+				</div>
+			</article>
+
+		</section>
+		<section class='slot'>
+			<header class='slottime'>
+				<div class='time'>4:00-4:50pm</div>
+			</header>
+
+			<article id="A-05" class='session'>
+				<h1>The Power of Canvas part 3</h1>
+				<div class="speaker">
+					<div class='name'>Jeff Fulton</div>
+					<div class='title'>CTO</div>
+					<div class='company'>8bitrocket.com</div>
+				</div>
+				<div class="speaker">
+					<div class='name'>Steve Fulton</div>
+					<div class='title'>Game Development, Web Technology Consultant</div>
+					<div class='company'>8bitrocket.com</div>
+				</div>
+				<div class='detail'>
+					<p>
+						HTML5 Canvas paints the World Wide web with audio and video. Learn about interactive multimedia applications and how HTML5s Canvas impacts their development. This new element animates images and brings gamelike experiences to the web.
+					</p>
+				</div>
+			</article>
+
+			<article id="G-05" class='session'>
+				<h1>GameJam WebGL Part 2</h1>
+				<div class="speaker">
+					<div class='name'>Tony Parisi</div>
+					<div class='title'></div>
+					<div class='company'>entrepreneur and career CTO/architect</div>
+				</div>
+				<div class='detail'></div>
+			</article>
+
+			<article id="U-05" class='session'>
+				<h1>
+					Using PhoneGap to build cross platform mobile applications in HTML5, CSS and Javascript.
+				</h1>
+				<div class="speaker">
+					<div class='name'>Steven Gill</div>
+					<div class='title'></div>
+					<div class='company'>Adobe</div>
+				</div>
+				<div class='detail'>
+					<p>
+						PhoneGap is open source framework that allows developers to build cross platform mobile applications using html5, css and javascript. This talk will be going over the goals and philosophy of the PhoneGap project, as well as showing some api demos. He will be doing a hello world example for iOS and Android. In addition, Steve will also be doing a demo of PhoneGap Build for building your applications in the cloud.
+					</p>
+				</div>
+			</article>
+
+		</section>
+		<section class='slot'>
+			<header class='slottime'>
+				<div class='time'>5:00-7:00pm</div>
+			</header>
+
+			<article id="" class='session'>
+				<h1>NETWORKING RECEPTION</h1>
+				<div class='detail'></div>
+			</article>
+
+		</section>
+		<h3>Tuesday, July 24, 2012</h3>
+		<section class='slot'>
+			<header class='slottime'>
+				<div class='time'>9:00-10:00am</div>
+			</header>
+
+			<article id="GEN-05" class='session'>
+				<h1>COMMUNITY SESSION - Design with Mobile in Mind</h1>
+				<div class="speaker">
+					<div class='name'>David Kaneda</div>
+					<div class='title'>Creative Web Technologist</div>
+					<div class='company'>Sencha</div>
+				</div>
+				<div class='detail'></div>
+			</article>
+
+		</section>
+		<section class='slot'>
+			<header class='slottime'>
+				<div class='time'>10:00-10:10am</div>
+			</header>
+
+			<article id="" class='session'>
+				<h1>DEMO</h1>
+				<div class='detail'></div>
+			</article>
+
+		</section>
+		<section class='slot'>
+			<header class='slottime'>
+				<div class='time'>10:30-11:20am</div>
+			</header>
+
+			<article id="A-06" class='session'>
+				<h1>Web Delivery for All with jQuery Mobile</h1>
+				<div class="speaker">
+					<div class='name'>Marc Grabanski</div>
+					<div class='title'></div>
+					<div class='company'>Talent Evangelist &amp; UI/UX Developer</div>
+				</div>
+				<div class='detail'>
+					<p>
+						Mobile web development frameworks are targeting the builtin web browsers on iPhone and Android only; however, jQuery mobile has in a different vision, one that will reach the largest distribution of phones possible.
+					</p>
+					<p>
+						Leveraging the ways of progressive enhancement, your website can be viewed in raw HTML on old mobile phones and then enhanced with nice CSS styles across mobile platforms that have a decent CSS and JavaScript support.
+					</p>
+					<p>
+						In this session, Marc gives you his list of reasons to use jQuery mobile, an overview of the framework and will draw from his experiences building websites on top of jQuery Mobile.
+					</p>
+				</div>
+			</article>
+
+			<article id="G-06" class='session'>
+				<h1>HTML5 Gaming for Mobile</h1>
+				<div class="speaker">
+					<div class='name'>Imram Malek</div>
+					<div class='title'>Chief of Gaming</div>
+					<div class='company'>MocoSpace</div>
+				</div>
+				<div class='detail'>
+					<p>
+						While the games industry continues to evolve away from the AAA console model of multi million dollar budgets and towards online mobile and social gaming, HTML5 is now starting to live up to its original claim of true cross platform development. This panel will discuss how HTML5 is being used today to create these high quality game experiences that work and work well! on all platforms including desktop, mobile phones, and tablet devices.
+					</p>
+					<p>
+						The session will also talk through some reallife business models for these games and how the mobile device ecosystem as it stands right now stacks up to HTML5 gaming.
+					</p>
+				</div>
+			</article>
+
+			<article id="U-06" class='session'>
+				<h1>HTML5 Browser Wars</h1>
+				<div class="speaker">
+					<div class='name'>Steve Adams</div>
+					<div class='title'></div>
+					<div class='company'>Crossfire Consulting</div>
+				</div>
+				<div class='detail'>
+					<p>
+						The HTML5 Standard is being deployed, but are all browsers equal?  Will HTML5 be truly interoperable or will the standard degrade into a mixed bag of browser specific implementations?  This session shows the Gallery of Great HTML5 implementations putting browsers in the test. What works and will the standard have enough momentum to force adherence.
+					</p>
+				</div>
+			</article>
+
+		</section>
+		<section class='slot'>
+			<header class='slottime'>
+				<div class='time'>11:30-12:20pm</div>
+			</header>
+
+			<article id="A-07" class='session'>
+				<h1>Vector Graphics with SVG and RaphaelJS</h1>
+				<div class="speaker">
+					<div class='name'>Marc Grabanski</div>
+					<div class='title'></div>
+					<div class='company'>Talent Evangelist &amp; UI/UX Developer</div>
+				</div>
+				<div class='detail'>
+					<p>
+						Computers screens come in all different sizes. To handle graphics for different cases, most web applications serve multiple different sizes of images. Now with retina displays it is only compounding the problem. With SVG Scalable Vector Graphics your graphics can scale up and down with ease.
+					</p>
+					<p>
+						In this session, Marc will teach you how to start using SVG and some of the pros and cons of using it to build web interfaces. He will also cover RaphaelJS and how it gives you some tools to make working with SVG more efficient and work in a wider amount of web browsers.
+					</p>
+				</div>
+			</article>
+
+			<article id="G-07" class='session'>
+				<h1>Using Unity for Games</h1>
+				<div class="speaker">
+					<div class='name'>Monty Sharma</div>
+					<div class='title'>Director</div>
+					<div class='company'>MassDigi</div>
+				</div>
+				<div class='detail'>
+					<p>
+						Unity 3D is the leader for developing games on the web.  We take a business look at the market and the battle that is shaping up between HTML 5 and Unity.
+						<br>
+						Who has the current lead?
+						<br>
+						What is happening in the market?
+						<br>
+						How are IDE vendors responding?
+						<br>
+						When and what should you use Unity for and when should you use HTML 5?
+					</p>
+				</div>
+			</article>
+
+			<article id="U-07" class='session'>
+				<h1>Case Study: Developing with HTML5</h1>
+				<div class="speaker">
+					<div class='name'>Steven Meek</div>
+					<div class='title'>Chief Technology Officer</div>
+					<div class='company'>North American Power</div>
+				</div>
+				<div class='detail'></div>
+			</article>
+
+		</section>
+		<section class='slot'>
+			<header class='slottime'>
+				<div class='time'>12:30-2:00pm</div>
+			</header>
+
+			<article id="" class='session'>
+				<h1>KEYNOTE LUNCHEON</h1>
+				<div class='detail'></div>
+			</article>
+
+		</section>
+		<section class='slot'>
+			<header class='slottime'>
+				<div class='time'>2:00-2:50pm</div>
+			</header>
+
+			<article id="A-08" class='session'>
+				<h1>How developers can utilize the element in HTML5</h1>
+				<div class="speaker">
+					<div class='name'>Pablo Schklowsky</div>
+					<div class='title'>Technical Lead</div>
+					<div class='company'>LongTail Video</div>
+				</div>
+				<div class='detail'>
+					<p>
+						The element represents the hottest new feature in HTML5 development, something all the major browsers are working on. While browsers currently don’t expose much about video, will allow users to share all sorts of textual data about the video. Content owners will be able to increase accessibility for the content, utilizing captions and descriptions for users who can’t hear or see the video. Searchability will play a major role as well, as will give search engines even more data, improving accuracy, translations, and location. This presentation will give an overview of capabilities and look at how it will impact the future ofHTML5 programming. This session will also inform developers of how they can make better use of their video data by working with the element.
+					</p>
+				</div>
+			</article>
+
+			<article id="G-08" class='session'>
+				<h1>Mobile Development Using Creative Suite 6</h1>
+				<div class="speaker">
+					<div class='name'>Paul Trani</div>
+					<div class='title'>Adobe Developer Evangelist</div>
+					<div class='company'>Adobe</div>
+				</div>
+				<div class='detail'>
+					<p>
+						With the recent release of Adobe Creative Suite 6 and the Creative Cloud, there are many new advancements that empower designers and developers to create and view their content across screens and devices.
+					</p>
+					<p>
+						In this session Paul Trani will take you through the latest in HTML5, CSS3, JavaScript and Flash, all using the newly released Adobe Creative Suite 6 and the Creative Cloud.
+					</p>
+				</div>
+			</article>
+
+			<article id="U-08" class='session'>
+				<h1>HTML5 App Store Proof of Concept</h1>
+				<div class="speaker">
+					<div class='name'>Mike Abegg</div>
+					<div class='title'>Senior Web Services and Mobile Apps Developer</div>
+					<div class='company'>Crossfire Consulting</div>
+				</div>
+				<div class='detail'>
+					<p>
+						The mobile web is an exciting new world of opportunities, but native apps are still a popular choice for many users. In this session Mike will explain the conceptualization & architecture of a native web app and show how to write an app in less than 30 mins that will work on Android, IOS, and theoretically any other platform, and also demonstrate setting up an android development environment, basic usage of the PhoneGap native web app framework, and deployment of an HTML5 web application as an Android native application into Google Play.
+					</p>
+				</div>
+			</article>
+
+		</section>
+		<section class='slot'>
+			<header class='slottime'>
+				<div class='time'>3:00-3:50pm</div>
+			</header>
+
+			<article id="A-09" class='session'>
+				<h1>HTML5 Security for the Mobile Web</h1>
+				<div class="speaker">
+					<div class='name'>Robert Klerer</div>
+					<div class='title'>CTO</div>
+					<div class='company'>ListYourself.net</div>
+				</div>
+				<div class='detail'>
+					<p>
+						The Mobile Web is a heterogeneous mixture of technologies, use patterns and methodologies.  A review of the divergence in precipitation about the simple concepts of ownership and responsibility highlight the challenges in using our mobile devices securely.  A look at what is being done right in the Mobile application environment as it becomes a more important part of out lives and where there is more work to be done.
+					</p>
+				</div>
+			</article>
+
+			<article id="G-09" class='session'>
+				<h1>Designing for Devices</h1>
+				<div class="speaker">
+					<div class='name'>Terry Ryan</div>
+					<div class='title'>Worldwide Developer Evangelist</div>
+					<div class='company'>Adobe</div>
+				</div>
+				<div class='detail'>
+					<p>
+						Device HTML design is easy, just use media queries and make everything bigger, right? Um, actually, that is a lot of it. But the rest of it is making decisions about what to shrink, what to move, what screen size do you set your queries too? All these and more are the hard stuff of mobile design.  This session will explore these issues and hopefully help you answer the questions for yourself.
+					</p>
+				</div>
+			</article>
+
+			<article id="U-09" class='session'>
+				<h1>HTML5 and the App Store</h1>
+				<div class="speaker">
+					<div class='name'>Mike Abegg</div>
+					<div class='title'>Senior Web Services and Mobile Apps Developer</div>
+					<div class='company'>Crossfire Consulting</div>
+				</div>
+				<div class='detail'>
+					<p>
+						The mobile web is an exciting new world of opportunities, but native apps are still a popular choice for many users. In this session Mike will explain the conceptualization & architecture of a native web app and show how to write an app in less than 30 mins that will work on Android, IOS, and theoretically any other platform, and also demonstrate setting up an android development environment, basic usage of the PhoneGap native web app framework, and deployment of an HTML5 web application as an Android native application into Google Play.
+					</p>
+				</div>
+			</article>
+
+		</section>
+		<section class='slot'>
+			<header class='slottime'>
+				<div class='time'>4:00-5:00pm</div>
+			</header>
+
+			<article id="GEN-08" class='session'>
+				<h1>
+					COMMUNITY SESSION - The Great Debate: HTML5 VS Native. How Should the Enterprise Respond?
+				</h1>
+				<div class="speaker">
+					<div class='name'>Joel Evans</div>
+					<div class='title'>Vice President of Strategy Integration</div>
+					<div class='company'>Mobiquity</div>
+				</div>
+				<div class='detail'>
+					<p>
+						The religious debate between native and html5 as the best approach for mobile application continues to rage.  Yet most enterprises are making this decision without understanding the broader implications such as user experience, security, app certification, revenue share, extensibility, and the evolving ecosystem around both solutions.  Apple, Google, and even Microsoft continue to drive more innovation into the device such as sensors, voice agents, gestures while large players like Facebook and Amazon are lining up with force behind html5 as a way around the stronghold of device makers.  Dramatic advances in the cloud further stoke the debate as cloud players are incentivized to put more capabilities into the browser.  This session will address how enterprises can achieve the right balance between html5 and native development to meet the needs of their mobile users.
+					</p>
+				</div>
+			</article>
+
+		</section>
+		<section class='slot'>
+			<header class='slottime'>
+				<div class='time'>5:00pm</div>
+			</header>
+
+			<article id="" class='session'>
+				<h1>Close</h1>
+				<div class='detail'></div>
+			</article>
+
+		</section>
+
+	</div>
+</body>
+</html>

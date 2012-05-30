@@ -1,0 +1,62 @@
+@import 'all';
+@import 'meyer-reset';
+
+$orange: #F1592A;
+$grey: #333333;
+$bordercolor: #B5BDBF;
+$bggrey: #F0F0F0;
+
+body{
+	font-family: Cambria,'Palatino Linotype','Book Antiqua','URW Palladio L',serif;
+	margin: 0 10px;
+}
+
+h1{
+	font-size: 4em;
+}
+
+h2{
+	font-size: 2.5em;
+}
+
+h3{
+	font-size: 1.5em;
+}
+
+section{
+	margin: 20px 0 20px 0 ;
+	header{
+		background-color: $bggrey;
+		font-size: 1.8em;
+	}
+
+	article{
+		margin: 0 0 20px 0 ;
+		
+		p{
+			margin: 10px 0;
+		}
+
+		h1{
+			color: $orange;
+			font-size: 2em;
+		}
+
+		.speaker 
+		{	
+			border-bottom: 1px dotted $bordercolor;
+			.name{
+				font-size: 1.5em;
+			}
+
+			.title{
+				color: $grey;
+
+			}
+
+			.company{
+				color: $orange;
+			}	
+		}
+	}
+}
