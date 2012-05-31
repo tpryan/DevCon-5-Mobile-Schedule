@@ -5,6 +5,7 @@ $orange: #F1592A;
 $grey: #333333;
 $bordercolor: #B5BDBF;
 $bggrey: #F0F0F0;
+$articlebg: #FBFBFB;
 
 body{
 	font-family: Cambria,'Palatino Linotype','Book Antiqua','URW Palladio L',serif;
@@ -25,25 +26,41 @@ h3{
 
 section{
 	margin: 20px 0 20px 0 ;
+	
 	header{
 		background-color: $bggrey;
 		font-size: 1.8em;
+		border-bottom: 5px solid #666666;
+		@include border-radius(5px);
+		@include box-shadow(3px, 2px, 2px, #CCCCCC);
+		margin-bottom: 10px;
+		padding: 0 5px;
 	}
 
 	article{
-		margin: 0 0 20px 0 ;
+		margin: 0 0 20px 0;
+		background-color: $articlebg;
+		border: 1px dotted $bordercolor;
+		@include border-radius(5px);
+		@include box-shadow(3px, 2px, 2px, #CCCCCC);
+		margin-bottom: 10px;
+		padding: 0 5px;
 		
 		p{
 			margin: 10px 0;
+			line-height: 1.5;
+			font-size: 1.20pxem;
 		}
 
 		h1{
 			color: $orange;
 			font-size: 2em;
+			margin-bottom: 10px;
 		}
 
 		.speaker 
 		{	
+			padding-bottom: 5px;
 			border-bottom: 1px dotted $bordercolor;
 			.name{
 				font-size: 1.5em;
