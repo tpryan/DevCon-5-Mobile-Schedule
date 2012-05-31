@@ -1,40 +1,78 @@
 @import 'all';
 @import 'meyer-reset';
 
+@include fontface("fonts","GoudyStM-webfont");
+
+
 $orange: #F1592A;
 $grey: #333333;
 $bordercolor: #B5BDBF;
-$bggrey: #F0F0F0;
+$bggrey: #D0D0D0;
 $articlebg: #FBFBFB;
 
 body{
-	font-family: Cambria,'Palatino Linotype','Book Antiqua','URW Palladio L',serif;
+	font-family: "GoudyStM-webfont", Cambria,'Palatino Linotype','Book Antiqua','URW Palladio L',serif;
 	margin: 0 10px;
+	line-height: 1.2;
+
 }
 
 h1{
 	font-size: 4em;
+	letter-spacing: -.1em;
+	word-spacing: .2em;
+}
+
+h1#logo{
+	margin-left: 5px;
+	width: 164px; height: 39px;
+	background: url("logo.png");
+	background-repeat: no-repeat;
+	text-indent: -9999px;
 }
 
 h2{
-	font-size: 2.5em;
+	font-size: 2em;
+	margin-top: 5px;
+	letter-spacing: -.1em;
+	word-spacing: .2em;
 }
 
 h3{
-	font-size: 1.5em;
+	font-size: 1.2em;
+	letter-spacing: -.1em;
+	word-spacing: .2em;
+}
+
+header{
+	margin-top: 5px;
+	@include border-radius(5px);
+	@include box-shadow(3px, 2px, 2px, #666666);
+	background: #525252; /* Old browsers */
+	background: -moz-linear-gradient(top, #525252 0%, #2c2c2c 50%, #101010 50%, #373737 94%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#525252), color-stop(50%,#2c2c2c), color-stop(50%,#101010), color-stop(94%,#373737)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #525252 0%,#2c2c2c 50%,#101010 50%,#373737 94%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #525252 0%,#2c2c2c 50%,#101010 50%,#373737 94%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #525252 0%,#2c2c2c 50%,#101010 50%,#373737 94%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#525252', endColorstr='#373737',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, #525252 0%,#2c2c2c 50%,#101010 50%,#373737 94%); /* W3C */
 }
 
 section{
 	margin: 20px 0 20px 0 ;
+
+	&:first-of-type{
+		margin: 10px 0 20px 0 ;
+	}	
 	
 	header{
+		background: none;
 		background-color: $bggrey;
 		font-size: 1.8em;
-		border-bottom: 5px solid #666666;
 		@include border-radius(5px);
-		@include box-shadow(3px, 2px, 2px, #CCCCCC);
+		@include box-shadow(3px, 2px, 2px, #666666);
 		margin-bottom: 10px;
-		padding: 0 5px;
+		padding: 5px 5px;
 	}
 
 	article{
@@ -49,12 +87,12 @@ section{
 		p{
 			margin: 10px 0;
 			line-height: 1.5;
-			font-size: 1.20pxem;
+			font-size: 1.2em;
 		}
 
 		h1{
 			color: $orange;
-			font-size: 2em;
+			font-size: 1.7em;
 			margin-bottom: 10px;
 		}
 
@@ -63,7 +101,7 @@ section{
 			padding-bottom: 5px;
 			border-bottom: 1px dotted $bordercolor;
 			.name{
-				font-size: 1.5em;
+				font-size: 1.3em;
 			}
 
 			.title{

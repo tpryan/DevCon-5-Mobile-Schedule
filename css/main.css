@@ -1,1 +1,147 @@
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after{content:"";content:none}q:before,q:after{content:"";content:none}table{border-collapse:collapse;border-spacing:0}body{font-family:Cambria,'Palatino Linotype','Book Antiqua','URW Palladio L',serif;margin:0 10px}h1{font-size:4em}h2{font-size:2.5em}h3{font-size:1.5em}section{margin:20px 0 20px 0}section header{background-color:#f0f0f0;font-size:1.8em;border-bottom:5px solid #666666;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;-moz-background-clip:padding;-webkit-background-clip:padding-box;background-clip:padding-box;-moz-box-shadow:3px 2px 2px #ccc;-webkit-box-shadow:3px 2px 2px #ccc;box-shadow:3px 2px 2px #ccc;margin-bottom:10px;padding:0 5px}section article{margin:0 0 20px 0;background-color:#fbfbfb;border:1px dotted #b5bdbf;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;-moz-background-clip:padding;-webkit-background-clip:padding-box;background-clip:padding-box;-moz-box-shadow:3px 2px 2px #ccc;-webkit-box-shadow:3px 2px 2px #ccc;box-shadow:3px 2px 2px #ccc;margin-bottom:10px;padding:0 5px}section article p{margin:10px 0;line-height:1.5;font-size:1.20pxem}section article h1{color:#f1592a;font-size:2em;margin-bottom:10px}section article .speaker{padding-bottom:5px;border-bottom:1px dotted #b5bdbf}section article .speaker .name{font-size:1.5em}section article .speaker .title{color:#333}section article .speaker .company{color:#f1592a}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: "GoudyStM-webfont";
+  src: url("fonts/GoudyStM-webfont.eot");
+  src: url("fonts/GoudyStM-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/GoudyStM-webfont.woff") format("woff"), url("fonts/GoudyStM-webfont.ttf") format("truetype"), url("fonts/GoudyStM-webfont.svg#TradeGothicLTStdRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  font-family: "GoudyStM-webfont", Cambria,'Palatino Linotype','Book Antiqua','URW Palladio L',serif;
+  margin: 0 10px;
+  line-height: 1.2; }
+
+h1 {
+  font-size: 4em;
+  letter-spacing: -0.1em;
+  word-spacing: .2em; }
+
+h1#logo {
+  margin-left: 5px;
+  width: 164px;
+  height: 39px;
+  background: url("logo.png");
+  background-repeat: no-repeat;
+  text-indent: -9999px; }
+
+h2 {
+  font-size: 2em;
+  margin-top: 5px;
+  letter-spacing: -0.1em;
+  word-spacing: .2em; }
+
+h3 {
+  font-size: 1.2em;
+  letter-spacing: -0.1em;
+  word-spacing: .2em; }
+
+header {
+  margin-top: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -moz-box-shadow: 3px 2px 2px #666666;
+  -webkit-box-shadow: 3px 2px 2px #666666;
+  box-shadow: 3px 2px 2px #666666;
+  background: #525252;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #525252 0%, #2c2c2c 50%, #101010 50%, #373737 94%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #525252), color-stop(50%, #2c2c2c), color-stop(50%, #101010), color-stop(94%, #373737));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #525252 0%, #2c2c2c 50%, #101010 50%, #373737 94%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #525252 0%, #2c2c2c 50%, #101010 50%, #373737 94%);
+  /* Opera11.10+ */
+  background: -ms-linear-gradient(top, #525252 0%, #2c2c2c 50%, #101010 50%, #373737 94%);
+  /* IE10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#525252', endColorstr='#373737',GradientType=0 );
+  /* IE6-9 */
+  background: linear-gradient(top, #525252 0%, #2c2c2c 50%, #101010 50%, #373737 94%);
+  /* W3C */ }
+
+section {
+  margin: 20px 0 20px 0; }
+  section:first-of-type {
+    margin: 10px 0 20px 0; }
+  section header {
+    background: none;
+    background-color: #d0d0d0;
+    font-size: 1.8em;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    -moz-box-shadow: 3px 2px 2px #666666;
+    -webkit-box-shadow: 3px 2px 2px #666666;
+    box-shadow: 3px 2px 2px #666666;
+    margin-bottom: 10px;
+    padding: 5px 5px; }
+  section article {
+    margin: 0 0 20px 0;
+    background-color: #fbfbfb;
+    border: 1px dotted #b5bdbf;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    -moz-box-shadow: 3px 2px 2px #cccccc;
+    -webkit-box-shadow: 3px 2px 2px #cccccc;
+    box-shadow: 3px 2px 2px #cccccc;
+    margin-bottom: 10px;
+    padding: 0 5px; }
+    section article p {
+      margin: 10px 0;
+      line-height: 1.5;
+      font-size: 1.2em; }
+    section article h1 {
+      color: #f1592a;
+      font-size: 1.7em;
+      margin-bottom: 10px; }
+    section article .speaker {
+      padding-bottom: 5px;
+      border-bottom: 1px dotted #b5bdbf; }
+      section article .speaker .name {
+        font-size: 1.3em; }
+      section article .speaker .title {
+        color: #333333; }
+      section article .speaker .company {
+        color: #f1592a; }
